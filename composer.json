@@ -1,0 +1,44 @@
+{
+    "name": "vrajroham/php-klarna",
+    "description": "Klarna REST PHP SDK",
+    "keywords": [
+        "vrajroham",
+        "php-klarna"
+    ],
+    "homepage": "https://github.com/vrajroham/php-klarna",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Vaibhavraj Roham",
+            "email": "vaibhavraj@vrajroham.me",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "guzzlehttp/guzzle": "^6.5 || ^7.1",
+        "nesbot/carbon": "^2.40"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vrajroham\\PhpKlarna\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Vrajroham\\PhpKlarna\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
