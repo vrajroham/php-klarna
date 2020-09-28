@@ -25,6 +25,11 @@ trait MakesHttpRequests
         return $this->request('PUT', $uri, $payload);
     }
 
+    protected function patch(string $uri, array $payload = [])
+    {
+        return $this->request('patch', $uri, $payload);
+    }
+
     protected function delete(string $uri, array $payload = [])
     {
         return $this->request('DELETE', $uri, $payload);

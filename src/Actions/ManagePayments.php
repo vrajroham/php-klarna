@@ -2,7 +2,8 @@
 
 namespace Vrajroham\PhpKlarna\Actions;
 
-use Vrajroham\PhpKlarna\Resources\CustomerToken;
+use Vrajroham\PhpKlarna\Resources\CustomerTokenFromAuthorization;
+use Vrajroham\PhpKlarna\Resources\OrderCreated;
 use Vrajroham\PhpKlarna\Resources\Session;
 
 trait ManagePayments
@@ -18,6 +19,13 @@ trait ManagePayments
     {
         $customerToken = $this->post("payments/v1/authorizations/".$authorizationToken."/customer-token", $data);
 
-        return new CustomerToken($customerToken, $this);
+        return new CustomerTokenFromAuthorization($customerToken, $this);
+    }
+
+    public function createOrderFromAuthorizationToken(string $authorizationToken, $data)
+    {
+        $order = $this->post("payments/v1/authorizations/".$authorizationToken."/order", $data);
+
+        return new OrderCreated($order, $this);
     }
 }

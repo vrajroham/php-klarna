@@ -2,12 +2,12 @@
 
 namespace Vrajroham\PhpKlarna\Resources;
 
-class CustomerToken extends ApiResource 
-{    
-    public string $status;
+class CustomerTokenFromAuthorization extends ApiResource 
+{
+    public string $tokenId;
 
-    public string $paymentMethodType;
-    
+    public array $billingAddress;
+
     public function __construct(array $attributes, $klarna = null)
     {
         parent::__construct($attributes, $klarna);        

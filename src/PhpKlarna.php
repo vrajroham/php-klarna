@@ -4,12 +4,16 @@ namespace Vrajroham\PhpKlarna;
 
 use Carbon\Carbon;
 use GuzzleHttp\Client;
+use Vrajroham\PhpKlarna\Actions\ManageCustomerTokens;
+use Vrajroham\PhpKlarna\Actions\ManageOrders;
 use Vrajroham\PhpKlarna\Actions\ManagePayments;
 use Vrajroham\PhpKlarna\Exceptions\ValidationException;
 
 class PhpKlarna
 {    
-    use ManagePayments, MakesHttpRequests;
+    use MakesHttpRequests;
+    
+    use ManagePayments, ManageCustomerTokens, ManageOrders;
 
     public Client $client;
 
