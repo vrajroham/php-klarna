@@ -37,7 +37,7 @@ trait ManageOrders
 
     public function cancelOrder(string $orderId)
     {
-        $response = $this->post("ordermanagement/v1/orders/{$orderId}/acknowledge");
+        $response = $this->post("ordermanagement/v1/orders/{$orderId}/cancel");
 
         return new RespondSuccess($response);
     }
