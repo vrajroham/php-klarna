@@ -4,6 +4,7 @@ namespace Vrajroham\PhpKlarna;
 
 use Carbon\Carbon;
 use GuzzleHttp\Client;
+use Vrajroham\PhpKlarna\Actions\ManageCheckouts;
 use Vrajroham\PhpKlarna\Actions\ManageCustomerTokens;
 use Vrajroham\PhpKlarna\Actions\ManageOrders;
 use Vrajroham\PhpKlarna\Actions\ManagePayments;
@@ -13,7 +14,7 @@ class PhpKlarna
 {    
     use MakesHttpRequests;
     
-    use ManagePayments, ManageCustomerTokens, ManageOrders;
+    use ManagePayments, ManageCustomerTokens, ManageOrders, ManageCheckouts;
 
     public Client $client;
 

@@ -1,4 +1,4 @@
-# Very short description of the package
+# PHP Klarna
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/vrajroham/php-klarna.svg?style=flat-square)](https://packagist.org/packages/vrajroham/php-klarna)
 [![Build Status](https://img.shields.io/travis/vrajroham/php-klarna/master.svg?style=flat-square)](https://travis-ci.org/vrajroham/php-klarna)
