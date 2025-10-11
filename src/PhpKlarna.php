@@ -75,7 +75,7 @@ class PhpKlarna
             throw new ValidationException(['Provide mode is invalid. Must be test or live']);
         }
 
-        if(strcmp($mode, 'test') === 0){
+        if(strcmp(strtolower($mode), 'test') === 0){
             return $testModeBaseUrls[strtolower($region)];
         }
 

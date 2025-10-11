@@ -7,6 +7,7 @@ use Vrajroham\PhpKlarna\PhpKlarna;
 use ReflectionObject;
 use ReflectionProperty;
 
+#[\AllowDynamicProperties]
 class ApiResource
 {
     public array $attributes = [];
