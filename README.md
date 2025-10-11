@@ -4,6 +4,7 @@
 [![Build Status](https://img.shields.io/travis/vrajroham/php-klarna/master.svg?style=flat-square)](https://travis-ci.org/vrajroham/php-klarna)
 [![Quality Score](https://img.shields.io/scrutinizer/g/vrajroham/php-klarna.svg?style=flat-square)](https://scrutinizer-ci.com/g/vrajroham/php-klarna)
 [![Total Downloads](https://img.shields.io/packagist/dt/vrajroham/php-klarna.svg?style=flat-square)](https://packagist.org/packages/vrajroham/php-klarna)
+[![PHP Composer](https://github.com/vrajroham/php-klarna/actions/workflows/php.yml/badge.svg)](https://github.com/vrajroham/php-klarna/actions/workflows/php.yml)
 
 A comprehensive PHP SDK for integrating with Klarna's REST APIs. This package provides a clean, intuitive interface for all major Klarna services including Payments, Orders, Checkouts, and Customer Token management.
 
